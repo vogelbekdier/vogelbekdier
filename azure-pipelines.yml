@@ -5,7 +5,6 @@
 
 trigger:
 - main
-
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
@@ -13,5 +12,3 @@ trigger:
       # Write your PowerShell commands here.
       
       Write-Host "Hello World"
-
-
