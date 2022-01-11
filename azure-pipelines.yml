@@ -1,4 +1,5 @@
-# for Windows PowerShell
-steps:
-- powershell: .\test.ps1
-
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+write-host "test"
