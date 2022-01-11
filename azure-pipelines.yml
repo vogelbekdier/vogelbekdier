@@ -6,11 +6,12 @@
 trigger:
 - main
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
 
-- script:
-- powershell: 
-write-host "Hello"
 
