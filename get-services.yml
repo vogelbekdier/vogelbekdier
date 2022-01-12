@@ -5,20 +5,4 @@ steps:
 - task: PowerShellOnTargetMachines@3
   inputs:
     machines: 'BFW-G11KNF2'
- #userName: # Optional
-    #userPassword: # Optional
-    scriptType: filePath
-    scriptPath: .\scripts\servicelijst.ps1 # Required when scriptType == FilePath
-    #inlineScript: '# Write your powershell commands here.Write-Output Hello World' # Required when scriptType == Inline
-    #scriptArguments: # Optional
-    #initializationScript: # Optional
-    #sessionVariables: # Optional
-    #communicationProtocol: 'Https' # Optional. Options: http, https
-    #authenticationMechanism: 'Default' # Optional. Options: default, credssp
-    #newPsSessionOptionArguments: '-SkipCACheck -IdleTimeout 7200000 -OperationTimeout 0 -OutputBufferingMode Block' # Optional
-    errorActionPreference: 'stop'
-    failOnStderr: false # Optional
-    ignoreLASTEXITCODE: false # Optional
-    #workingDirectory: # Optional
-    runPowershellInParallel: true # Optional
 - powershell: .\scripts\servicelijst.ps1
