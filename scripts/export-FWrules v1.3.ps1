@@ -1,6 +1,6 @@
 ﻿param(
 
-    [Parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $false)]
     [String]$server
 
 
