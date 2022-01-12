@@ -1,0 +1,3 @@
+# for Windows PowerShell
+steps:
+- powershell: .\script\servicelijst.ps1
