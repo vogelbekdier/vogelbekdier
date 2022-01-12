@@ -1,8 +1,4 @@
 # for Windows PowerShell
 
 steps:
-
-- task: PowerShellOnTargetMachines@3
-  inputs:
-    machines: 'BFW-G11KNF2'
 - powershell: .\scripts\servicelijst.ps1
